@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=PT+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+    /* 1ª seção */
+
+.hero-container {
+    height: 700px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./audiovisual/Post\ para\ crianças.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #51A691;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    font-size: 60px;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+}
+
+li {
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 21px;
+    color:#6F2DBD;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #D870DB;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #6F2DBD;
+    fill: transparent;
+    stroke-width: 3px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -1s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay:  0s;
+    -webkit-animation-delay:  0s;
+}
+
+    /* 2ª seção */
+
+.content-container {
+    height: 700px;
+    width: 100%;
+
+    background-color: gray;
+}
+
+.profile-container{
+    color: gray;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./audiovisual/profile-container.jpg');
+    background-size: cover;
+}
+
+.profile-content{
+    width: 30%;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.profile-image{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #D870DB;
+}
+
+.name-text{
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 21px;
+    -webkit-text-stroke: 0,5px white;
+    text-stroke: 0,5px white;
+    margin-top: 15px;
+}
+
+.profile-text{
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    -webkit-text-stroke: 0,5px white;
+    text-stroke: 0,5px white;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.profile-button{
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #D870DB;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: #51A691;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    font-size: 17px;
+    margin-top: 35px;
+    cursor: pointer;
+}
+
+.divider{
+    width: 100%;
+    border-top: .5px solid gray;
+    margin: 20px 0;
+}
+
+.icons-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.icon-item{
+    width: 80px;
+    height: auto;
+}
+
+.profile-sinopse{
+    margin-left: 7%;
+    width: 430px;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: white;
+    font-size: 17px;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+}
+
+    /* 3ª seção */
+
+.hero-container3 {
+    height: max-content;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./audiovisual/Post\ para\ crianças.png');
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+
+.project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-content{
+    width: 75%;
+    height: 120%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.position-container{
+    width: 100%;
+    display: flex;
+    padding: 7%;
+}
+
+.right{
+    justify-content: flex-end;
+}
+
+.left{
+    justify-content: flex-start;
+}
+
+
+.project-card{
+    width: 700px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.514);
+    box-shadow: 10px 10px 5px black;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.card-reverse{
+    flex-direction: row-reverse;
+}
+
+
+.project-image{
+    width: 350px;
+    height: 120%;
+    position: relative;
+    border-radius: 8px;
+    right: 20px;
+    top: -30px;
+}
+
+.image-reverse{
+    left: 20px;
+}
+
+
+.project-text{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: white;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+}
+
+.text-reverse{
+    margin-left: 15px;
+}
+
+
+    /* #ª seção */
